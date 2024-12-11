@@ -1,0 +1,71 @@
+/* HE ENCONTRADO ESTE LINK PARA LA TIPOGRAFIA EN CSS */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+body {
+    font-family: 'VT323', monospace;
+    background-color: var;
+    color: var;
+    line-height: 1.6;
+}
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.5rem;
+    color: #0066CC;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 1rem;
+}
+h2 {
+    font-size: 2rem;
+    color: #33CC33;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.hero-content {
+    flex: 1;
+}
+.hero-image {
+    flex: 1;
+}
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.9rem;
+}
+.btn-primary {
+    background-color: #0066CC;
+    color: #FFFFFF;
+}
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid#0066CC;
+    border-radius: 5px;
+    font-family: 'VT323', monospace;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
