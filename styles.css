@@ -1,71 +1,158 @@
-/* HE ENCONTRADO ESTE LINK PARA LA TIPOGRAFIA EN CSS */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
 body {
     font-family: 'VT323', monospace;
-    background-color: var;
-    color: var;
+    background-color: white;
+    color: black;
     line-height: 1.6;
+    display: flex;
+    height: 100vh;
 }
+
+body.dark-mode {
+    background-color: rgb(25, 27, 28);
+    color: white;
+}
+
 h1 {
     font-family: 'Press Start 2P', cursive;
     font-size: 2.5rem;
-    color: #0066CC;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    color: #2D4DDC;
     margin-bottom: 1rem;
 }
+
 h2 {
-    font-size: 2rem;
-    color: #33CC33;
+    font-size: 42px;
+    color: #44B428;
     font-weight: bold;
     margin-bottom: 0.8rem;
 }
+
+h3 {
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 12px;
+}
+
 .container {
     max-width: 1080px;
     margin: 0 auto;
     padding: 2rem;
 }
-.hero {
+
+.main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 64px;
 }
-.hero-content {
+
+.content {
     flex: 1;
+    border-radius: 30px;
 }
-.hero-image {
-    flex: 1;
-}
-.hero-image img {
-    max-width: 100%;
+
+.content img {
+    max-width: 87%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 30px;
+    margin: 20px;
 }
+
+.form {
+    font-size: 24px;
+    margin: 0 35% 0 35%;
+    padding: 2.5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.content button{
+    margin: 30px;
+}
+
+input {
+    background-color: white;
+    border-radius: 30px;
+    padding: 2.5%;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
 }
+
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
     text-transform: uppercase;
     font-family: 'Press Start 2P', cursive;
     font-size: 0.9rem;
+    background-color: rgb(25, 27, 28);
+    color: white;
 }
-.btn-primary {
-    background-color: #0066CC;
-    color: #FFFFFF;
+
+.btn:hover {
+    background-color: rgba(25, 27, 28, 0.8);
+    scale: 1.05;
 }
+
+body.dark-mode nav button {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
 .input-field {
     width: 100%;
     padding: 10px;
-    border: 2px solid#0066CC;
+    border: 2px solid#2D4DDC;
     border-radius: 5px;
     font-family: 'VT323', monospace;
     font-size: 1.1rem;
     margin-top: 1rem;
+}
+
+.green {
+    background-color: #44B428;
+    color: #FFFFFF;
+}
+
+.green:hover {
+    background-color: #44B428ba;
+    scale: 1.05;
+}
+
+.blue {
+    background-color: #2D4DDC;
+    color: #FFFFFF;
+}
+
+.blue:hover {
+    background-color: #2d4ddcba;
+    scale: 1.05;
+}
+
+.orange {
+    background-color: #CA7F30;
+    color: #FFFFFF;
+}
+
+.orange:hover {
+    background-color: #CA7F30ba;
+    scale: 1.05;
+}
+
+a {
+    text-decoration: none;
 }
