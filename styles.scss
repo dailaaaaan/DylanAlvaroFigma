@@ -1,0 +1,139 @@
+$font-primary: 'VT323', monospace;
+$font-secondary: 'Press Start 2P', cursive;
+$bg-light: white;
+$bg-dark: rgb(25, 27, 28);
+$text-light: white;
+$text-dark: black;
+$primary-blue: #2D4DDC;
+$primary-green: #44B428;
+$primary-orange: #CA7F30;
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  background-color: $bg-light;
+  color: $text-dark;
+  line-height: 1.6;
+  display: flex;
+  height: 100vh;
+
+  &.dark-mode {
+    background-color: $bg-dark;
+    color: $text-light;
+  }
+}
+
+h1 {
+  font-family: $font-secondary;
+  font-size: 2.5rem;
+  color: $primary-blue;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 42px;
+  color: $primary-green;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+h3 {
+  font-size: 24px;
+  color: $text-light;
+  text-align: center;
+  margin: 12px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 64px;
+}
+
+.content {
+  flex: 1;
+  border-radius: 30px;
+
+  img {
+    max-width: 87%;
+    height: auto;
+    border-radius: 30px;
+    margin: 20px;
+  }
+
+  button {
+    margin: 30px;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: $font-secondary;
+  font-size: 0.9rem;
+  background-color: $bg-dark;
+  color: $text-light;
+
+  &:hover {
+    background-color: rgba(25, 27, 28, 0.8);
+    scale: 1.05;
+  }
+}
+
+.green {
+  background-color: $primary-green;
+  color: $text-light;
+
+  &:hover {
+    background-color: rgba($primary-green, 0.8);
+    scale: 1.05;
+  }
+}
+
+.blue {
+  background-color: $primary-blue;
+  color: $text-light;
+
+  &:hover {
+    background-color: rgba($primary-blue, 0.8);
+    scale: 1.05;
+  }
+}
+
+.orange {
+  background-color: $primary-orange;
+  color: $text-light;
+
+  &:hover {
+    background-color: rgba($primary-orange, 0.8);
+    scale: 1.05;
+  }
+}
+
+a {
+  text-decoration: none;
+}
