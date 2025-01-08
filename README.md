@@ -1,3 +1,3 @@
 # Retro Bits
 
-**Guia de estilos:** [Figma](https://www.figma.com/design/9pcF4N5QNNR83W8SUroWDM/Retro-Bits?node-id=0-1&t=aeVdlHcWojuuQ7k5-1)
+**Guia de estilos:** [Link Figma](https://www.figma.com/design/9pcF4N5QNNR83W8SUroWDM/Retro-Bits?node-id=0-1&t=aeVdlHcWojuuQ7k5-1)
